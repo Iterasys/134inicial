@@ -98,7 +98,7 @@ def teste_somar_leitura_de_lista(numero_a, numero_b, resultado_esperado):
     assert resultado_obtido == resultado_esperado
 
 # TDD = Test Driven Development
-#       Desenvolvimento Direcionado por Teste
+#        Desenvolvimento Direcionado por Teste
 #
 # - Criar todos os testes de unidade no começo
 # - Executar todos os testes pelo menos 1 vez por dia
