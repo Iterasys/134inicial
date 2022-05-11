@@ -49,6 +49,15 @@ def teste_subtrair():
     # 3 - Valida / Checa
     assert resultado_obtido == resultado_esperado
 
+@pytest.mark.parametrize('numero_a, numero_b, resultado_esperado',ler_csv('C:\\Users\\corre\\PycharmProjects\\134inicial\\vendors\\csv\\massa_teste_subtrair_positivo.csv'))
+def teste_subtrair_leitura_csv(numero_a, numero_b, resultado_esperado):
+    # 1 - Prepara / Configura
+
+    # 2 - Executa
+    resultado_obtido = subtrair(int(numero_a), int(numero_b))
+
+    # 3 - Valida / Checa
+    assert resultado_obtido == int(resultado_esperado)
 
 def teste_multiplicar():
     # 1 - Configura
