@@ -1,0 +1,18 @@
+{
+  "id": 1732181,
+  "category": {
+    "id": 1,
+    "name": "cachorro"
+  },
+  "name": "Snoopy",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "vacinado"
+    }
+  ],
+  "status": "pending"
+}
