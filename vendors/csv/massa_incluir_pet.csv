@@ -1,0 +1,5 @@
+pet_id,category_id,category_name,pet_name,tags_id,tags_name,status
+178101,1,cachorro,Scooby,1,vacinado,available
+178102,2,gato,Garfield,2,castrado,available
+178103,3,peixe,Nemo,3,registrado,available
+178104,2,gato,Bichento,1,vacinado,available
