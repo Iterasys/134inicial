@@ -1,4 +1,4 @@
-# ToDo: 4 - consultar os dados do pet que foi vendido
+
 import json
 import os
 
