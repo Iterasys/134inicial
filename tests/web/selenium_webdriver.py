@@ -1,10 +1,11 @@
 # Configura
 # Biblioteca / Imports
 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 
 # Dados de Entrada
-from selenium import webdriver
-
 origem = 'São Paolo'
 destino = 'New York'
 primeiro_nome = 'Juca'
@@ -36,6 +37,20 @@ class Testes:
         # e2e / end to end / ponta a ponta
         # Pagina Inicial (Home)
         # Executa / Valida
+        # abrir o browser no endereco
+        self.driver.get('https://www.blazedemo.com')
+        # clicar na lista de cidades de origem
+        lista = self.driver.find_element(By.NAME, "fromPort")
+        lista.click()
+        # selecionar a cidade de origem desejada
+        lista.find_element(By.XPATH, '//option[ .= "São Paolo"]').click()
+        # clicar na lista de cidades de destino
+        lista = self.driver.find_element(By.NAME, 'toPort')
+        lista.click()
+        # selecionar a cidade de destino desejada
+        lista.find_element(By.XPATH, '//option[ .= "New York"]').click()
+        # clicar no botão de procurar voos
+        self.driver.find_element(By.CSS_SELECTOR, 'input.btn.btn-primary')
 
         # Pagina Lista de Passagens
         # Executa / Valida
